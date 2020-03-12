@@ -1,0 +1,31 @@
+﻿C#企业级开发技术练习2答题卡
+
+班级：19信管1班     
+姓名：张舒倩     
+学号：20190307137     
+
+注：请将答案放置在序号下方。*/
+
+（一）string[] languages = { "javascript", ".net", "ecmascript", "golang","java" };
+int i = 96;            
+foreach(string c languages)
+{
+      Console.Write(c.PadRight(11, '&'));
+      i=i+1                  
+      Console.WriteLine($"{i++.ToString().PadLeft(5,'*')}");
+ }
+
+（二）string fs = "javascript.net,ecmascript,goland java";
+string[] r = fs.Split(',');
+foreach (string s in r)
+         Console.WriteLine(s);
+string[] course = {"javascript.net,ecmascript,goland java"};
+ int i=0, j=0, k=0;
+  foreach(string s in course)
+          {
+                if (s.Contains("a")) i++;
+                if (s.StartsWith("j")) j++;
+               if (s.EndsWith("t")) k++;
+         }
+       Console.WriteLine($"包含a:{i},j开头:{j},t结尾:{k}");
+
